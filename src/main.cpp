@@ -14,5 +14,5 @@ const std::string input =
 int main() {
     Tokenizer t = Tokenizer();
 
-    std::vector<HtmlTags> nothing = t.ParseString(input);
+    std::vector<HtmlTag> nothing = t.ParseString(input);
 }

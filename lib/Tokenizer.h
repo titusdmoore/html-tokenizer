@@ -6,7 +6,7 @@
 
 namespace HtmlTokenizer {
 
-enum HtmlTags {
+enum HtmlTag {
     HT_TAG_HTML = 0,
     HT_TAG_HEAD,
     HT_TAG_TITLE,
@@ -121,8 +121,9 @@ enum HtmlTags {
 class Tokenizer {
 public:
     static void Testing(std::string input);
-    std::vector<HtmlTags> ParseString(std::string input);
+    std::vector<HtmlTag> ParseString(std::string input);
     int TestInstance(std::string input);
+    static HtmlTag GetTokenFrom(std::string input);
     Tokenizer();
 
 private:

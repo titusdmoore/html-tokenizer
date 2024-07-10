@@ -16,13 +16,13 @@ Tokenizer::Tokenizer() {
 
 // Testing for now
 // struct DomNode {
-//     HtmlTags token;
+//     HtmlTag token;
 //     std::vec<DomNode*> children;
 // };
 
-std::vector<HtmlTags> Tokenizer::ParseString(std::string input) {
+std::vector<HtmlTag> Tokenizer::ParseString(std::string input) {
     bool readingTag = false;
-    std::vector<HtmlTags> tags = std::vector<HtmlTags>();
+    std::vector<HtmlTag> tags = std::vector<HtmlTag>();
 
     while(this->head < input.length()) {
         if (readingTag) {
